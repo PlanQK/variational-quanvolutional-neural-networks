@@ -1,0 +1,4060 @@
+Initialize application with hyperparameters:
+{'batch_size': 2, 'calculation': 'RandomLayer', 'calculation_args': {}, 'calculation_seed': 5, 'circuit_layers': 1, 'data': 'MNIST', 'data_shuffle_seed': 362356, 'encoder': 'FRQI_for_2x2', 'encoder_args': {}, 'epochs_num': 50, 'filter_length': 2, 'img_size': 14, 'logs_path': './save/', 'lr': 0.01, 'measurement': 'UniformGateMeasurements', 'measurement_args': {}, 'n_rotations': 4, 'np_seed': 10, 'out_channels': 3, 'out_features': 10, 'run_test': True, 'steps_in_epoch': 100, 'stride': 1, 'test_samples': 1000, 'torch_seed': 10, 'train_samples': 10000, 'train_split_percent': 0.8, 'trainable': True, 'val_data_size': 50, 'valid_samples': 200, 'weights_seed': 11111, 'name': 'Seed_5_Trainable_yes_FRQI_for_2x2_2x2_imgsize_14'}
+Loading MNIST dataset from the PyTorch storage
+Loading MNIST dataset into memory
+Saving data tensors to disk at ./mnist/preload_tensors_saved_img_size-14
+hyper parameters: {'batch_size': 2, 'calculation': 'RandomLayer', 'calculation_args': {}, 'calculation_seed': 5, 'circuit_layers': 1, 'data': 'MNIST', 'data_shuffle_seed': 362356, 'encoder': 'FRQI_for_2x2', 'encoder_args': {}, 'epochs_num': 50, 'filter_length': 2, 'img_size': 14, 'logs_path': './save/', 'lr': 0.01, 'measurement': 'UniformGateMeasurements', 'measurement_args': {}, 'n_rotations': 4, 'np_seed': 10, 'out_channels': 3, 'out_features': 10, 'run_test': True, 'steps_in_epoch': 100, 'stride': 1, 'test_samples': 1000, 'torch_seed': 10, 'train_samples': 10000, 'train_split_percent': 0.8, 'trainable': True, 'val_data_size': 50, 'valid_samples': 200, 'weights_seed': 11111, 'name': 'Seed_5_Trainable_yes_FRQI_for_2x2_2x2_imgsize_14'}
+Starting Trainable Experiment with 1 layers and 1 filters
+Start training epoch 1 with seed 7685385 
+Quantum circuit at the beginning of epoch 1
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0420, -0.9099, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0044, -0.9526, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0449, -0.9751, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0773, -0.9727, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0909, -0.9773, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0810, -1.0024, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0634, -1.0296, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0499, -1.0496, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0486, -1.0561, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0446, -1.0629, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0300, -1.0764, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0097, -1.0906, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0042, -1.0998, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0052, -1.1051, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0078, -1.1083, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0072, -1.1106, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0033, -1.1126, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.1209e-04, -1.1142e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0028, -1.1153, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 1 / 50 . Accuracy: 0.345000. Loss: 2.336056. Time: 18.674529
+Validate after epoch 1 with seed 7685385
+Val Accuracy: 0.650000, Val Loss: 1.256429 
+Start training epoch 2 with seed 8100989 
+Quantum circuit at the beginning of epoch 2
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0148, -1.1173, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0069, -1.1224, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0059, -1.1255, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0081, -1.1272, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0084, -1.1284, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0021, -1.1308, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0042, -1.1319, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0075, -1.1326, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0073, -1.1334, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.4985e-04, -1.1352e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0080, -1.1369, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0119, -1.1382, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0046, -1.1418, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0066, -1.1448, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0068, -1.1484, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.2389e-04, -1.1516e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0076, -1.1542, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0084, -1.1567, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0067, -1.1587, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 2 / 50 . Accuracy: 0.600000. Loss: 1.232031. Time: 18.821316
+Validate after epoch 2 with seed 8100989
+Val Accuracy: 0.670000, Val Loss: 1.055104 
+Start training epoch 3 with seed 5242852 
+Quantum circuit at the beginning of epoch 3
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0022, -1.1622, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.9397e-04, -1.1633e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.2289e-04, -1.1641e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0021, -1.1645, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0052, -1.1647, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0020, -1.1656, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0023, -1.1668, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0027, -1.1680, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0041, -1.1691, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0036, -1.1708, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0078, -1.1725, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0056, -1.1746, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0026, -1.1763, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.9580e-04, -1.1775e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.3521e-04, -1.1782e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.8996e-04, -1.1786e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0021, -1.1788, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0023, -1.1790, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.7940e-04, -1.1793e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 3 / 50 . Accuracy: 0.655000. Loss: 1.052452. Time: 19.199306
+Validate after epoch 3 with seed 5242852
+Val Accuracy: 0.690000, Val Loss: 1.101408 
+Start training epoch 4 with seed 3589440 
+Quantum circuit at the beginning of epoch 4
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0104, -1.1796, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0094, -1.1812, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.8879e-04, -1.1846e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0021, -1.1870, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.7085e-04, -1.1887e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.8151e-05, -1.1897e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1125e-03, -1.1903e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0025, -1.1908, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.3787e-04, -1.1913e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1914e-03, -1.1917e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0177e-03, -1.1920e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0030, -1.1921, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0027, -1.1923, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.3056e-04, -1.1926e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.9390e-04, -1.1929e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0012, -1.1930, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0016, -1.1931, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0031, -1.1931, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0034, -1.1931, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 4 / 50 . Accuracy: 0.720000. Loss: 0.906918. Time: 19.053986
+Validate after epoch 4 with seed 3589440
+Val Accuracy: 0.710000, Val Loss: 0.925905 
+Start training epoch 5 with seed 6909297 
+Quantum circuit at the beginning of epoch 5
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0018, -1.1934, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5524e-04, -1.1937e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.3480e-04, -1.1938e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0038, -1.1940, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0044, -1.1943, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0057, -1.1943, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0083, -1.1940, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0071, -1.1947, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0030, -1.1959, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0013, -1.1969, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0052, -1.1974, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0080, -1.1977, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0106, -1.1975, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0119, -1.1977, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0077, -1.1997, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.8877e-04, -1.2024e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0057, -1.2040, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0117, -1.2046, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0147, -1.2051, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 5 / 50 . Accuracy: 0.640000. Loss: 1.107961. Time: 19.077644
+Validate after epoch 5 with seed 6909297
+Val Accuracy: 0.670000, Val Loss: 0.853037 
+Start training epoch 6 with seed 5542621 
+Quantum circuit at the beginning of epoch 6
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0091, -1.2102, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0024, -1.2136, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0031, -1.2158, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0098, -1.2166, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0141, -1.2171, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0183, -1.2167, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0147, -1.2206, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0083, -1.2254, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0030, -1.2288, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0042, -1.2313, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0093, -1.2326, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0119, -1.2337, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0124, -1.2348, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0098, -1.2369, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0059, -1.2391, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0016, -1.2409, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0029, -1.2420, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0068, -1.2426, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0094, -1.2429, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 6 / 50 . Accuracy: 0.675000. Loss: 1.091008. Time: 18.917437
+Validate after epoch 6 with seed 5542621
+Val Accuracy: 0.790000, Val Loss: 0.752195 
+Start training epoch 7 with seed 9192944 
+Quantum circuit at the beginning of epoch 7
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0184, -1.2403, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0151, -1.2441, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0084, -1.2497, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0042, -1.2533, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0017, -1.2554, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0105, -1.2567, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0205, -1.2578, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0224, -1.2618, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0269, -1.2609, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0249, -1.2659, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0146, -1.2788, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0041, -1.2899, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0063, -1.2973, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0134, -1.3016, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0225, -1.3007, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0284, -1.2998, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0266, -1.3069, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0177, -1.3222, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0122, -1.3315, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 7 / 50 . Accuracy: 0.720000. Loss: 0.906717. Time: 18.781584
+Validate after epoch 7 with seed 9192944
+Val Accuracy: 0.730000, Val Loss: 0.871889 
+Start training epoch 8 with seed 7448477 
+Quantum circuit at the beginning of epoch 8
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0054, -1.3412, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0033, -1.3458, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0116, -1.3482, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0087, -1.3554, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0072, -1.3600, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0070, -1.3624, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0055, -1.3647, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0031, -1.3666, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.1127e-05, -1.3684e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0019, -1.3694, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0040, -1.3701, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0080, -1.3697, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0101, -1.3698, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0112, -1.3699, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0129, -1.3693, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0101, -1.3725, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0052, -1.3765, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.8617e-04, -1.3801e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.5381e-04, -1.3822e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 8 / 50 . Accuracy: 0.690000. Loss: 1.080684. Time: 18.864904
+Validate after epoch 8 with seed 7448477
+Val Accuracy: 0.650000, Val Loss: 1.130610 
+Start training epoch 9 with seed 9349114 
+Quantum circuit at the beginning of epoch 9
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3795e-03, -1.3845e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0016, -1.3853, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0051, -1.3861, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0052, -1.3874, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0047, -1.3885, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0057, -1.3886, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0066, -1.3887, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0067, -1.3891, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0069, -1.3893, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0076, -1.3892, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0073, -1.3895, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0029, -1.3919, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0042, -1.3949, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0127, -1.3952, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0149, -1.3989, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0095, -1.4089, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0027, -1.4185, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0022, -1.4241, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0056, -1.4277, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 9 / 50 . Accuracy: 0.680000. Loss: 0.992084. Time: 18.888296
+Validate after epoch 9 with seed 9349114
+Val Accuracy: 0.770000, Val Loss: 0.722823 
+Start training epoch 10 with seed 4905216 
+Quantum circuit at the beginning of epoch 10
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0035, -1.4339, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0032, -1.4352, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0032, -1.4360, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0026, -1.4366, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0181e-03, -1.4373e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.8193e-04, -1.4378e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0020, -1.4380, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0031, -1.4381, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0027, -1.4385, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3067e-03, -1.4392e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.4580e-04, -1.4396e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.7365e-04, -1.4399e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.3577e-04, -1.4401e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.0799e-04, -1.4403e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.6908e-04, -1.4405e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.7685e-04, -1.4406e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.6182e-05, -1.4408e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.7825e-04, -1.4409e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0019, -1.4410, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 10 / 50 . Accuracy: 0.685000. Loss: 0.971054. Time: 19.020275
+Validate after epoch 10 with seed 4905216
+Val Accuracy: 0.780000, Val Loss: 0.924801 
+Start training epoch 11 with seed 8092138 
+Quantum circuit at the beginning of epoch 11
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.0400e-04, -1.4415e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.2109e-04, -1.4417e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.8686e-04, -1.4420e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0016, -1.4422, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0480e-03, -1.4426e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.7082e-04, -1.4428e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0638e-04, -1.4429e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.5053e-04, -1.4430e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0019, -1.4430, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.7542e-04, -1.4434e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.8992e-04, -1.4438e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.3530e-04, -1.4440e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.8350e-04, -1.4442e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0015, -1.4444, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0019, -1.4445, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0023, -1.4446, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0019, -1.4448, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2609e-03, -1.4451e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1720e-03, -1.4452e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 11 / 50 . Accuracy: 0.690000. Loss: 0.856562. Time: 18.799002
+Validate after epoch 11 with seed 8092138
+Val Accuracy: 0.780000, Val Loss: 0.655009 
+Start training epoch 12 with seed 8333814 
+Quantum circuit at the beginning of epoch 12
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2276e-05, -1.4454e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.7588e-04, -1.4454e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0017, -1.4455, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0019, -1.4455, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0018, -1.4456, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0022, -1.4456, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0028, -1.4456, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0029, -1.4456, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3574e-03, -1.4461e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.3241e-04, -1.4467e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0015, -1.4470, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.3212e-04, -1.4474e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.9989e-04, -1.4476e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0018, -1.4477, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0031, -1.4476, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0043, -1.4474, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0039, -1.4478, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0025, -1.4487, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2422e-03, -1.4492e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 12 / 50 . Accuracy: 0.735000. Loss: 0.959637. Time: 19.069898
+Validate after epoch 12 with seed 8333814
+Val Accuracy: 0.720000, Val Loss: 0.730734 
+Start training epoch 13 with seed 7585188 
+Quantum circuit at the beginning of epoch 13
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3184e-03, -1.4498e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0018, -1.4498, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0018, -1.4500, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3165e-03, -1.4501e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.8527e-05, -1.4504e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.0641e-04, -1.4505e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.7495e-04, -1.4507e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.9427e-04, -1.4508e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.4083e-03, -1.4508e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3923e-03, -1.4509e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.0968e-04, -1.4511e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.5618e-04, -1.4512e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.7971e-05, -1.4513e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.4849e-04, -1.4514e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.4167e-04, -1.4515e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.6542e-04, -1.4515e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.8443e-04, -1.4516e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5476e-04, -1.4516e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0016, -1.4517, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 13 / 50 . Accuracy: 0.665000. Loss: 1.023972. Time: 18.915067
+Validate after epoch 13 with seed 7585188
+Val Accuracy: 0.800000, Val Loss: 0.667963 
+Start training epoch 14 with seed 964979 
+Quantum circuit at the beginning of epoch 14
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0022, -1.4520, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0015, -1.4524, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.6601e-04, -1.4527e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.3255e-05, -1.4529e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.1673e-04, -1.4530e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.4126e-04, -1.4530e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.8706e-04, -1.4532e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3185e-03, -1.4533e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0023, -1.4533, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0022, -1.4536, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.4197e-03, -1.4539e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.0656e-04, -1.4542e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2405e-03, -1.4544e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2730e-03, -1.4547e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.6331e-04, -1.4549e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2968e-04, -1.4552e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.9478e-04, -1.4553e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.5835e-04, -1.4554e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.6060e-04, -1.4555e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 14 / 50 . Accuracy: 0.720000. Loss: 0.882537. Time: 18.929567
+Validate after epoch 14 with seed 964979
+Val Accuracy: 0.790000, Val Loss: 0.721852 
+Start training epoch 15 with seed 1152528 
+Quantum circuit at the beginning of epoch 15
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.6668e-04, -1.4556e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.4124e-04, -1.4556e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.6537e-04, -1.4556e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.6402e-04, -1.4557e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.5343e-04, -1.4557e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.8522e-04, -1.4557e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.6768e-05, -1.4558e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.9777e-05, -1.4558e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.5450e-04, -1.4558e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.2882e-05, -1.4558e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.8272e-04, -1.4558e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.7474e-04, -1.4558e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.1342e-04, -1.4558e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.9130e-04, -1.4558e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0015, -1.4558, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0019, -1.4558, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0015, -1.4559, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.0665e-04, -1.4561e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.6378e-04, -1.4562e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 15 / 50 . Accuracy: 0.820000. Loss: 0.610668. Time: 18.704726
+Validate after epoch 15 with seed 1152528
+Val Accuracy: 0.780000, Val Loss: 0.896789 
+Start training epoch 16 with seed 840036 
+Quantum circuit at the beginning of epoch 16
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.8645e-04, -1.4563e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3812e-04, -1.4564e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.2505e-05, -1.4564e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3495e-04, -1.4564e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.0470e-04, -1.4564e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.8806e-04, -1.4565e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.3761e-05, -1.4566e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.0531e-04, -1.4566e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.6763e-04, -1.4567e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1680e-03, -1.4567e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1033e-03, -1.4567e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.6232e-04, -1.4568e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.1863e-04, -1.4569e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.6476e-04, -1.4570e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.4105e-04, -1.4570e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.8633e-04, -1.4571e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.7834e-04, -1.4571e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0617e-03, -1.4571e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3962e-03, -1.4571e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 16 / 50 . Accuracy: 0.810000. Loss: 0.703395. Time: 18.848231
+Validate after epoch 16 with seed 840036
+Val Accuracy: 0.800000, Val Loss: 0.781601 
+Start training epoch 17 with seed 180463 
+Quantum circuit at the beginning of epoch 17
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.9480e-05, -1.4574e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.5243e-04, -1.4575e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.4494e-03, -1.4576e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1877e-03, -1.4577e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.4434e-04, -1.4579e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.6679e-04, -1.4580e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.3256e-04, -1.4582e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.8173e-04, -1.4583e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.6403e-04, -1.4584e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2105e-03, -1.4584e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2704e-03, -1.4584e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0701e-03, -1.4585e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.1163e-04, -1.4586e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.0224e-05, -1.4586e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.1598e-04, -1.4587e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.4489e-04, -1.4587e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0758e-03, -1.4587e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.3101e-04, -1.4588e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.7842e-04, -1.4588e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 17 / 50 . Accuracy: 0.765000. Loss: 1.060846. Time: 18.913624
+Validate after epoch 17 with seed 180463
+Val Accuracy: 0.740000, Val Loss: 1.065510 
+Start training epoch 18 with seed 575883 
+Quantum circuit at the beginning of epoch 18
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.7155e-04, -1.4589e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2870e-04, -1.4589e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3115e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.8109e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.6901e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.3005e-05, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.0719e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.4494e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.0350e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.5796e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.3046e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.1782e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.1277e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.4700e-04, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3650e-03, -1.4589e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0015, -1.4590, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.4517e-03, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3834e-03, -1.4590e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.4271e-04, -1.4591e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 18 / 50 . Accuracy: 0.800000. Loss: 0.730236. Time: 18.964003
+Validate after epoch 18 with seed 575883
+Val Accuracy: 0.630000, Val Loss: 1.125521 
+Start training epoch 19 with seed 2033718 
+Quantum circuit at the beginning of epoch 19
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.1995e-04, -1.4593e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.4232e-03, -1.4593e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0018, -1.4593, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0021, -1.4593, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0020, -1.4594, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0018, -1.4595, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0016, -1.4595, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.4357e-03, -1.4596e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.5236e-04, -1.4597e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.0583e-05, -1.4599e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.0242e-04, -1.4599e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.7354e-04, -1.4600e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.8296e-04, -1.4600e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.9168e-04, -1.4600e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.1021e-04, -1.4600e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.7536e-04, -1.4600e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2626e-03, -1.4600e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2551e-03, -1.4600e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.8378e-04, -1.4601e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 19 / 50 . Accuracy: 0.795000. Loss: 0.708695. Time: 19.012221
+Validate after epoch 19 with seed 2033718
+Val Accuracy: 0.730000, Val Loss: 1.130231 
+Start training epoch 20 with seed 822616 
+Quantum circuit at the beginning of epoch 20
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.9470e-04, -1.4603e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.6586e-04, -1.4603e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.2028e-04, -1.4604e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.7397e-04, -1.4604e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.5842e-04, -1.4604e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.2245e-04, -1.4604e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.4948e-04, -1.4604e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.6098e-04, -1.4605e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.3386e-05, -1.4605e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.3236e-04, -1.4605e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.3829e-04, -1.4605e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.9560e-04, -1.4605e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.5576e-04, -1.4605e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.7619e-04, -1.4605e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.7373e-04, -1.4606e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.6048e-04, -1.4606e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.6269e-05, -1.4606e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.6690e-04, -1.4606e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.5071e-04, -1.4606e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 20 / 50 . Accuracy: 0.750000. Loss: 0.899366. Time: 18.938843
+Validate after epoch 20 with seed 822616
+Val Accuracy: 0.750000, Val Loss: 0.981414 
+Start training epoch 21 with seed 519531 
+Quantum circuit at the beginning of epoch 21
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.2743e-04, -1.4606e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.1628e-04, -1.4606e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.8248e-04, -1.4606e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.9584e-05, -1.4607e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.9313e-04, -1.4608e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.6532e-04, -1.4608e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.7047e-04, -1.4608e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.3736e-04, -1.4608e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.3591e-04, -1.4608e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.9567e-04, -1.4608e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.0930e-04, -1.4608e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.7936e-04, -1.4608e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.5686e-04, -1.4609e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2128e-04, -1.4609e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.0209e-04, -1.4609e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.0713e-04, -1.4609e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1316e-03, -1.4608e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2362e-03, -1.4609e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1499e-03, -1.4609e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 21 / 50 . Accuracy: 0.755000. Loss: 0.845729. Time: 18.868662
+Validate after epoch 21 with seed 519531
+Val Accuracy: 0.880000, Val Loss: 0.428160 
+Start training epoch 22 with seed 3749553 
+Quantum circuit at the beginning of epoch 22
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.7727e-04, -1.4610e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.5765e-05, -1.4611e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.3475e-04, -1.4611e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.1635e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.7827e-05, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3197e-05, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.5488e-05, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3678e-05, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.9319e-05, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.3731e-05, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.3752e-05, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.8230e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.6073e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.8638e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.7939e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.9711e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.0311e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.2096e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.7322e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 22 / 50 . Accuracy: 0.815000. Loss: 0.621172. Time: 18.921853
+Validate after epoch 22 with seed 3749553
+Val Accuracy: 0.790000, Val Loss: 0.921843 
+Start training epoch 23 with seed 7810102 
+Quantum circuit at the beginning of epoch 23
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.4786e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.0459e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.9494e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.8281e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.4004e-05, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.8227e-04, -1.4612e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.1808e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.8370e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.8568e-05, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.1561e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.9675e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.1863e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.2440e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.5230e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.8947e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.9509e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.9927e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.3526e-04, -1.4613e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.6646e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 23 / 50 . Accuracy: 0.825000. Loss: 0.729449. Time: 18.848483
+Validate after epoch 23 with seed 7810102
+Val Accuracy: 0.850000, Val Loss: 0.604079 
+Start training epoch 24 with seed 6635929 
+Quantum circuit at the beginning of epoch 24
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.3568e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.4015e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.9312e-05, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.0313e-05, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1254e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2860e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.7598e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.5876e-05, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.4324e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.3619e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.7299e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.8539e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.5936e-05, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.1870e-05, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.7302e-05, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.4622e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.0276e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.5347e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.7997e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 24 / 50 . Accuracy: 0.780000. Loss: 0.783685. Time: 19.038130
+Validate after epoch 24 with seed 6635929
+Val Accuracy: 0.720000, Val Loss: 1.041990 
+Start training epoch 25 with seed 5948798 
+Quantum circuit at the beginning of epoch 25
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.3819e-04, -1.4614e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3290e-04, -1.4615e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.5973e-04, -1.4615e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.7163e-04, -1.4615e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1587e-03, -1.4615e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2962e-03, -1.4615e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1791e-03, -1.4615e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0586e-03, -1.4616e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.4453e-04, -1.4616e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2160e-03, -1.4618e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0025, -1.4618, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0028, -1.4620, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0028, -1.4622, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0029, -1.4623, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0028, -1.4624, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0024, -1.4626, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.9323e-04, -1.4630e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1984e-03, -1.4635e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0016, -1.4640, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 25 / 50 . Accuracy: 0.750000. Loss: 1.030483. Time: 18.818784
+Validate after epoch 25 with seed 5948798
+Val Accuracy: 0.820000, Val Loss: 0.764989 
+Start training epoch 26 with seed 9650829 
+Quantum circuit at the beginning of epoch 26
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0024, -1.4643, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0028, -1.4643, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0027, -1.4644, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0020, -1.4648, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.5380e-04, -1.4651e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5398e-05, -1.4654e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.7567e-04, -1.4655e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.8612e-04, -1.4657e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.4402e-03, -1.4657e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2440e-03, -1.4658e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.6715e-04, -1.4659e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.7230e-04, -1.4660e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.0448e-05, -1.4661e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.6181e-04, -1.4662e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.4310e-04, -1.4662e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.1597e-04, -1.4663e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1722e-03, -1.4664e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.9901e-04, -1.4666e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.7081e-04, -1.4667e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 26 / 50 . Accuracy: 0.815000. Loss: 0.607856. Time: 18.886254
+Validate after epoch 26 with seed 9650829
+Val Accuracy: 0.820000, Val Loss: 0.815598 
+Start training epoch 27 with seed 8032092 
+Quantum circuit at the beginning of epoch 27
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0015, -1.4668, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0022, -1.4668, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0023, -1.4669, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0022, -1.4670, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0019, -1.4672, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0223e-03, -1.4674e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.2453e-04, -1.4677e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0029, -1.4679, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0051, -1.4675, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0073, -1.4668, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0070, -1.4680, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0059, -1.4697, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0048, -1.4711, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0034, -1.4724, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0022, -1.4734, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0375e-03, -1.4741e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0022, -1.4749, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0046, -1.4753, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0052, -1.4760, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Epoch 27 / 50 . Accuracy: 0.770000. Loss: 0.959535. Time: 18.835132
+Validate after epoch 27 with seed 8032092
+Val Accuracy: 0.760000, Val Loss: 0.997979 
+Start training epoch 28 with seed 9700694 
+Quantum circuit at the beginning of epoch 28
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0043, -1.4780, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0034, -1.4790, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0027, -1.4796, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0021, -1.4801, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0015, -1.4804, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.7203e-04, -1.4808e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.6466e-04, -1.4811e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0019, -1.4811, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0040, -1.4809, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0065, -1.4800, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0063, -1.4812, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0048, -1.4833, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0037, -1.4847, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0028, -1.4858, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.1032e-05, -1.4872e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0021, -1.4886, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0022, -1.4898, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.6445e-04, -1.4913e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1721e-03, -1.4923e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 28 / 50 . Accuracy: 0.810000. Loss: 0.704219. Time: 18.853745
+Validate after epoch 28 with seed 9700694
+Val Accuracy: 0.810000, Val Loss: 0.802042 
+Start training epoch 29 with seed 1833630 
+Quantum circuit at the beginning of epoch 29
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.0772e-04, -1.4935e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.3320e-04, -1.4938e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.9441e-04, -1.4940e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.3194e-04, -1.4941e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1978e-03, -1.4941e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.4641e-03, -1.4942e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0020, -1.4941, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0018, -1.4943, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.3760e-04, -1.4948e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.8853e-04, -1.4952e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2657e-03, -1.4954e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0023, -1.4954, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0029, -1.4953, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1446e-03, -1.4964e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.7684e-04, -1.4974e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0021, -1.4980, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0024, -1.4986, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0021, -1.4992, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3599e-03, -1.4997e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 29 / 50 . Accuracy: 0.770000. Loss: 0.849441. Time: 18.850314
+Validate after epoch 29 with seed 1833630
+Val Accuracy: 0.680000, Val Loss: 1.343287 
+Start training epoch 30 with seed 8003673 
+Quantum circuit at the beginning of epoch 30
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.6820e-04, -1.5006e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0022, -1.5008, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0033, -1.5008, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0035, -1.5012, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0039, -1.5011, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0036, -1.5017, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0023, -1.5027, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0016, -1.5034, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2505e-03, -1.5037e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0924e-03, -1.5040e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.5486e-04, -1.5041e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.0440e-04, -1.5044e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.3859e-04, -1.5045e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0023, -1.5045, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0031, -1.5045, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0039, -1.5044, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0032, -1.5053, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0021, -1.5063, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.5929e-04, -1.5073e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 30 / 50 . Accuracy: 0.740000. Loss: 1.111419. Time: 18.790658
+Validate after epoch 30 with seed 8003673
+Val Accuracy: 0.790000, Val Loss: 0.852626 
+Start training epoch 31 with seed 1804940 
+Quantum circuit at the beginning of epoch 31
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0024, -1.5086, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0024, -1.5093, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0020, -1.5099, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0021, -1.5101, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0020, -1.5103, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3529e-03, -1.5107e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.3523e-04, -1.5112e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.6005e-04, -1.5115e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0444e-03, -1.5118e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0874e-03, -1.5120e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2151e-03, -1.5121e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.5053e-04, -1.5123e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.6318e-04, -1.5124e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.8831e-04, -1.5125e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.4557e-06, -1.5126e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.1371e-05, -1.5127e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.1358e-04, -1.5127e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.8635e-04, -1.5127e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.3249e-04, -1.5128e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 31 / 50 . Accuracy: 0.825000. Loss: 0.745879. Time: 18.860225
+Validate after epoch 31 with seed 1804940
+Val Accuracy: 0.760000, Val Loss: 0.990717 
+Start training epoch 32 with seed 2488863 
+Quantum circuit at the beginning of epoch 32
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0038e-03, -1.5128e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0248e-03, -1.5128e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3274e-03, -1.5128e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.4716e-03, -1.5127e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2491e-03, -1.5128e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.2911e-04, -1.5131e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.1418e-05, -1.5133e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.4572e-04, -1.5134e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0017, -1.5134, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0021, -1.5134, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0020, -1.5136, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0019, -1.5138, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.4810e-03, -1.5140e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1049e-03, -1.5142e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0584e-03, -1.5143e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2240e-04, -1.5147e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1209e-03, -1.5149e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3860e-03, -1.5151e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2726e-03, -1.5154e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 32 / 50 . Accuracy: 0.765000. Loss: 0.684463. Time: 19.056351
+Validate after epoch 32 with seed 2488863
+Val Accuracy: 0.780000, Val Loss: 0.986694 
+Start training epoch 33 with seed 9993017 
+Quantum circuit at the beginning of epoch 33
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.1693e-04, -1.5157e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.3904e-04, -1.5158e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1460e-03, -1.5158e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0704e-03, -1.5158e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.2218e-04, -1.5159e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.9652e-04, -1.5160e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.5247e-04, -1.5161e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.1430e-04, -1.5161e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.2723e-04, -1.5161e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2043e-04, -1.5162e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.0638e-04, -1.5162e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.4060e-04, -1.5162e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.7829e-04, -1.5163e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.8531e-04, -1.5163e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.2365e-04, -1.5163e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.1735e-04, -1.5164e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.4613e-04, -1.5164e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.0897e-04, -1.5165e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.7043e-05, -1.5165e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 33 / 50 . Accuracy: 0.835000. Loss: 0.681319. Time: 18.886968
+Validate after epoch 33 with seed 9993017
+Val Accuracy: 0.810000, Val Loss: 1.123058 
+Start training epoch 34 with seed 6096676 
+Quantum circuit at the beginning of epoch 34
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1098e-05, -1.5165e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0442e-04, -1.5166e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.6470e-05, -1.5166e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1477e-04, -1.5166e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.1961e-05, -1.5166e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.6345e-04, -1.5166e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.3126e-04, -1.5166e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.2328e-04, -1.5166e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3699e-04, -1.5166e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.2641e-05, -1.5166e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.5132e-04, -1.5167e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.6766e-04, -1.5167e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.9176e-04, -1.5167e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.6301e-04, -1.5167e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.4901e-04, -1.5167e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3400e-04, -1.5167e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.6247e-04, -1.5168e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.2353e-04, -1.5168e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.4391e-04, -1.5168e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 34 / 50 . Accuracy: 0.795000. Loss: 0.787514. Time: 18.751946
+Validate after epoch 34 with seed 6096676
+Val Accuracy: 0.860000, Val Loss: 0.566249 
+Start training epoch 35 with seed 8416786 
+Quantum circuit at the beginning of epoch 35
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.6970e-04, -1.5168e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.3615e-04, -1.5168e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.4037e-04, -1.5168e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5946e-04, -1.5168e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.9657e-04, -1.5169e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.2907e-05, -1.5170e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.4360e-04, -1.5170e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.7999e-04, -1.5170e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.3372e-04, -1.5170e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5447e-04, -1.5171e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.9404e-04, -1.5171e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.2654e-04, -1.5171e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.9123e-04, -1.5171e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.0550e-05, -1.5172e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.2966e-05, -1.5173e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3255e-04, -1.5173e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.6910e-04, -1.5173e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.3939e-05, -1.5174e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.7710e-05, -1.5174e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 35 / 50 . Accuracy: 0.790000. Loss: 0.770442. Time: 18.921914
+Validate after epoch 35 with seed 8416786
+Val Accuracy: 0.860000, Val Loss: 0.716789 
+Start training epoch 36 with seed 7544925 
+Quantum circuit at the beginning of epoch 36
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.4923e-04, -1.5174e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.6588e-04, -1.5174e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.1569e-04, -1.5174e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.5698e-04, -1.5174e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.0432e-04, -1.5174e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.0191e-04, -1.5174e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.2921e-04, -1.5174e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.4943e-04, -1.5174e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.9110e-04, -1.5175e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.1515e-04, -1.5175e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.4234e-04, -1.5175e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.0130e-05, -1.5175e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.1315e-04, -1.5176e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.8912e-04, -1.5176e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.3525e-04, -1.5176e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.8915e-04, -1.5176e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.9136e-04, -1.5176e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.6023e-04, -1.5177e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.1461e-04, -1.5178e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 36 / 50 . Accuracy: 0.815000. Loss: 0.777175. Time: 18.951849
+Validate after epoch 36 with seed 7544925
+Val Accuracy: 0.770000, Val Loss: 1.138617 
+Start training epoch 37 with seed 2300823 
+Quantum circuit at the beginning of epoch 37
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0016, -1.5178, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0018, -1.5178, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0021, -1.5177, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0023, -1.5177, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0021, -1.5179, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1114e-03, -1.5184e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.9653e-04, -1.5191e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0018, -1.5195, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0025, -1.5198, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0029, -1.5200, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0030, -1.5203, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0030, -1.5205, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0027, -1.5208, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0023, -1.5212, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0023, -1.5212, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0020, -1.5215, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1259e-03, -1.5221e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5747e-04, -1.5226e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.7195e-04, -1.5230e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 37 / 50 . Accuracy: 0.750000. Loss: 0.841721. Time: 18.862234
+Validate after epoch 37 with seed 2300823
+Val Accuracy: 0.780000, Val Loss: 0.913089 
+Start training epoch 38 with seed 297566 
+Quantum circuit at the beginning of epoch 38
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0034, -1.5225, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0044, -1.5223, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0049, -1.5223, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0042, -1.5237, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0034, -1.5251, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0018, -1.5269, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.7147e-04, -1.5287e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0022, -1.5297, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0036, -1.5303, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0045, -1.5305, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0052, -1.5303, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0047, -1.5320, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0036, -1.5344, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0026, -1.5363, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-0.0016, -1.5379, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0308e-03, -1.5388e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.8144e-04, -1.5393e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.0456e-04, -1.5398e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.8734e-04, -1.5401e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 38 / 50 . Accuracy: 0.825000. Loss: 0.720311. Time: 18.884569
+Validate after epoch 38 with seed 297566
+Val Accuracy: 0.760000, Val Loss: 1.083742 
+Start training epoch 39 with seed 9087736 
+Quantum circuit at the beginning of epoch 39
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.1235e-04, -1.5406e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.5959e-04, -1.5409e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.1249e-04, -1.5410e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.8571e-04, -1.5411e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.5557e-04, -1.5413e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2200e-04, -1.5415e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.9004e-04, -1.5416e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3017e-03, -1.5416e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0017, -1.5417, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0019, -1.5418, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0019, -1.5419, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 0.0017, -1.5424, -0.2684, -0.6564]], dtype=torch.float64,
+       requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1785e-03, -1.5428e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.7813e-04, -1.5433e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.6833e-04, -1.5437e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.3885e-04, -1.5440e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.1845e-04, -1.5442e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.7688e-04, -1.5446e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.4955e-04, -1.5447e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 39 / 50 . Accuracy: 0.780000. Loss: 0.820798. Time: 18.858283
+Validate after epoch 39 with seed 9087736
+Val Accuracy: 0.860000, Val Loss: 0.389631 
+Start training epoch 40 with seed 4529545 
+Quantum circuit at the beginning of epoch 40
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1657e-03, -1.5451e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1170e-03, -1.5455e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.7856e-04, -1.5458e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.8584e-04, -1.5460e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.0693e-04, -1.5462e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.6198e-04, -1.5464e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.6196e-04, -1.5465e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.2578e-04, -1.5466e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.2871e-04, -1.5467e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.2785e-04, -1.5468e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.2887e-04, -1.5469e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5841e-04, -1.5471e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5806e-04, -1.5471e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.9533e-04, -1.5471e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.0745e-04, -1.5471e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3540e-03, -1.5470e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3603e-03, -1.5471e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.9324e-04, -1.5480e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.9133e-05, -1.5485e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 40 / 50 . Accuracy: 0.810000. Loss: 0.670414. Time: 18.870882
+Validate after epoch 40 with seed 4529545
+Val Accuracy: 0.810000, Val Loss: 1.076283 
+Start training epoch 41 with seed 2643983 
+Quantum circuit at the beginning of epoch 41
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.4469e-04, -1.5490e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.8262e-04, -1.5495e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.7300e-04, -1.5498e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.0019e-04, -1.5499e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.1306e-04, -1.5500e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.1919e-04, -1.5501e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.9435e-04, -1.5502e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.7891e-04, -1.5502e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.0970e-04, -1.5504e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.9996e-04, -1.5505e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.7984e-05, -1.5506e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.8423e-04, -1.5507e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.3505e-04, -1.5508e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.7156e-04, -1.5509e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5772e-04, -1.5510e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.6427e-04, -1.5511e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.9726e-04, -1.5511e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.1897e-04, -1.5513e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.3054e-04, -1.5514e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 41 / 50 . Accuracy: 0.810000. Loss: 0.746330. Time: 19.012259
+Validate after epoch 41 with seed 2643983
+Val Accuracy: 0.810000, Val Loss: 1.100324 
+Start training epoch 42 with seed 4407926 
+Quantum circuit at the beginning of epoch 42
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.8361e-05, -1.5516e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0651e-04, -1.5516e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.5228e-04, -1.5516e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.7979e-04, -1.5516e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5244e-04, -1.5517e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5431e-04, -1.5517e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.4501e-05, -1.5517e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.0496e-05, -1.5517e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.5556e-05, -1.5518e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2898e-05, -1.5518e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.0818e-06, -1.5518e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3639e-04, -1.5518e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0144e-04, -1.5519e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1168e-04, -1.5519e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.8334e-05, -1.5519e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.5612e-05, -1.5519e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.1750e-05, -1.5519e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.0411e-05, -1.5519e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.4168e-04, -1.5519e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 42 / 50 . Accuracy: 0.785000. Loss: 0.780672. Time: 18.545441
+Validate after epoch 42 with seed 4407926
+Val Accuracy: 0.830000, Val Loss: 0.603784 
+Start training epoch 43 with seed 3019847 
+Quantum circuit at the beginning of epoch 43
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.3060e-05, -1.5520e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0598e-04, -1.5521e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.6292e-04, -1.5521e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.6797e-04, -1.5521e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.9777e-04, -1.5521e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.5202e-04, -1.5521e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.1723e-04, -1.5521e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.2999e-04, -1.5521e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.2230e-04, -1.5520e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.7541e-04, -1.5521e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.0907e-04, -1.5521e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.8053e-04, -1.5521e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.1674e-04, -1.5523e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.2451e-04, -1.5524e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.3900e-04, -1.5524e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5307e-04, -1.5524e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.7427e-05, -1.5525e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2778e-06, -1.5525e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1247e-04, -1.5525e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 43 / 50 . Accuracy: 0.845000. Loss: 0.713140. Time: 19.025020
+Validate after epoch 43 with seed 3019847
+Val Accuracy: 0.780000, Val Loss: 1.056235 
+Start training epoch 44 with seed 2389387 
+Quantum circuit at the beginning of epoch 44
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.0711e-04, -1.5525e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.6378e-04, -1.5525e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.8960e-04, -1.5525e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.4289e-04, -1.5526e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.5007e-05, -1.5526e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.2858e-04, -1.5527e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.1516e-04, -1.5527e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.4948e-04, -1.5526e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.1246e-04, -1.5527e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.5799e-04, -1.5530e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.4630e-04, -1.5532e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.2540e-04, -1.5534e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-4.5726e-04, -1.5535e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.9770e-04, -1.5537e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.9642e-04, -1.5538e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2182e-04, -1.5538e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.2943e-05, -1.5539e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.9430e-06, -1.5539e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.9162e-05, -1.5539e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 44 / 50 . Accuracy: 0.775000. Loss: 0.811414. Time: 18.939792
+Validate after epoch 44 with seed 2389387
+Val Accuracy: 0.910000, Val Loss: 0.496770 
+Start training epoch 45 with seed 6358673 
+Quantum circuit at the beginning of epoch 45
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.9833e-04, -1.5539e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.5264e-04, -1.5539e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.9543e-04, -1.5540e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.9341e-04, -1.5540e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.9671e-04, -1.5541e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.1608e-04, -1.5541e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2287e-05, -1.5542e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.1635e-05, -1.5542e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.1711e-04, -1.5542e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.6243e-05, -1.5543e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.5741e-05, -1.5543e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.2968e-06, -1.5543e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.4422e-04, -1.5544e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.6917e-04, -1.5544e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.0060e-04, -1.5546e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.3026e-04, -1.5547e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.0286e-04, -1.5549e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.7532e-04, -1.5549e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0750e-04, -1.5550e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 45 / 50 . Accuracy: 0.800000. Loss: 0.937218. Time: 18.445848
+Validate after epoch 45 with seed 6358673
+Val Accuracy: 0.800000, Val Loss: 0.868750 
+Start training epoch 46 with seed 91566 
+Quantum circuit at the beginning of epoch 46
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.8362e-04, -1.5551e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.9181e-04, -1.5551e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.7805e-04, -1.5551e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.0657e-05, -1.5552e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3852e-04, -1.5552e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.1583e-04, -1.5552e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.2058e-04, -1.5552e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.6035e-04, -1.5552e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.3266e-04, -1.5552e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.4674e-04, -1.5552e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.8960e-04, -1.5552e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.5149e-04, -1.5553e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.0286e-04, -1.5555e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5163e-05, -1.5556e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5393e-04, -1.5557e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.3966e-05, -1.5558e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.9762e-05, -1.5559e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.0998e-04, -1.5559e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.7930e-04, -1.5559e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 46 / 50 . Accuracy: 0.775000. Loss: 0.803505. Time: 19.290890
+Validate after epoch 46 with seed 91566
+Val Accuracy: 0.800000, Val Loss: 0.706871 
+Start training epoch 47 with seed 5528267 
+Quantum circuit at the beginning of epoch 47
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.6923e-04, -1.5559e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.9498e-04, -1.5559e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.8935e-04, -1.5560e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.5465e-05, -1.5561e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.5884e-04, -1.5561e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.6205e-04, -1.5561e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.3745e-04, -1.5562e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 4.6509e-04, -1.5566e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.6023e-04, -1.5569e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1680e-04, -1.5571e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.9212e-04, -1.5572e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.4576e-04, -1.5573e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.4761e-04, -1.5574e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-3.1445e-04, -1.5574e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.3268e-04, -1.5575e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.9094e-04, -1.5575e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.7247e-04, -1.5575e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5586e-04, -1.5575e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-5.7113e-05, -1.5576e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 47 / 50 . Accuracy: 0.820000. Loss: 0.791072. Time: 19.216675
+Validate after epoch 47 with seed 5528267
+Val Accuracy: 0.880000, Val Loss: 0.467722 
+Start training epoch 48 with seed 3695388 
+Quantum circuit at the beginning of epoch 48
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.8785e-05, -1.5576e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2685e-04, -1.5576e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.8718e-04, -1.5576e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.6241e-04, -1.5576e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-9.4459e-05, -1.5577e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.2143e-04, -1.5577e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1348e-04, -1.5577e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.5320e-04, -1.5577e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.5270e-04, -1.5577e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-2.6381e-04, -1.5577e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.8522e-04, -1.5577e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-1.1288e-04, -1.5577e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.3941e-05, -1.5577e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.2404e-05, -1.5578e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.5035e-04, -1.5578e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.7819e-04, -1.5578e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.6301e-04, -1.5579e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.5225e-04, -1.5579e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.8941e-04, -1.5579e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 48 / 50 . Accuracy: 0.840000. Loss: 0.512063. Time: 18.856379
+Validate after epoch 48 with seed 3695388
+Val Accuracy: 0.720000, Val Loss: 1.205275 
+Start training epoch 49 with seed 3054369 
+Quantum circuit at the beginning of epoch 49
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.1305e-04, -1.5579e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.1574e-04, -1.5579e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.2820e-04, -1.5579e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.7419e-04, -1.5579e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3712e-04, -1.5580e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.4740e-06, -1.5580e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-7.7021e-05, -1.5581e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-8.2724e-05, -1.5581e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[-6.4064e-05, -1.5581e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2519e-05, -1.5581e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.2580e-05, -1.5581e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.2012e-04, -1.5581e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.7821e-04, -1.5581e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.2778e-04, -1.5581e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.9105e-04, -1.5581e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.0495e-04, -1.5580e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.2088e-04, -1.5580e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.6610e-04, -1.5579e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.1764e-04, -1.5579e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 49 / 50 . Accuracy: 0.840000. Loss: 0.609617. Time: 19.339454
+Validate after epoch 49 with seed 3054369
+Val Accuracy: 0.800000, Val Loss: 1.026039 
+Start training epoch 50 with seed 5436884 
+Quantum circuit at the beginning of epoch 50
+Training step 5. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.2329e-04, -1.5580e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 10. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 6.7477e-04, -1.5581e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 15. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.5641e-04, -1.5584e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 20. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.5000e-04, -1.5586e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 25. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.0905e-04, -1.5587e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 30. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.3404e-04, -1.5587e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 35. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 1.5163e-04, -1.5587e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 40. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.3463e-04, -1.5587e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 45. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.9326e-04, -1.5588e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 50. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.4661e-04, -1.5587e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 55. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.5453e-04, -1.5587e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 60. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 7.4784e-04, -1.5586e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 65. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.0686e-04, -1.5586e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 70. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 9.0532e-04, -1.5585e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 75. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 8.8793e-04, -1.5586e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 80. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 5.5445e-04, -1.5589e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 85. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 3.3113e-04, -1.5592e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 90. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.8075e-04, -1.5593e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Training step 95. Output current quantum circuit weights.
+Parameter containing:
+tensor([[ 2.2880e-04, -1.5594e+00, -2.6835e-01, -6.5641e-01]],
+       dtype=torch.float64, requires_grad=True)
+Epoch 50 / 50 . Accuracy: 0.790000. Loss: 0.984362. Time: 19.307398
+Validate after epoch 50 with seed 5436884
+Val Accuracy: 0.810000, Val Loss: 0.835844 
+Training Execution time: 27:58:15.00
+Conducting Test
+Test Accuracy: 0.834000, Test Loss: 0.716795 

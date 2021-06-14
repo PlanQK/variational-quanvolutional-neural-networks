@@ -1,0 +1,15 @@
+,epoch,train_loss,train_acc,train_time_per_step,val_loss,val_acc,name,trainable,encoder,From last 10 Epochs
+Seed_1_Trainable_no_FRQI_for_2x2_2x2_imgsize_14,44,"0,381272772645897","0,86","1,24437811851501","0,370158707220107","0,9",Seed_1_Trainable_no_FRQI_for_2x2_2x2_imgsize_14,False,FRQI,
+Seed_4_Trainable_no_NEQR_2x2_imgsize_14,44,"3,17654564565352","0,79","2,44715857028961","1,60673484419013","0,89",Seed_4_Trainable_no_NEQR_2x2_imgsize_14,False,NEQR,
+Seed_5_Trainable_no_Threshold_Encoder_2x2_imgsize_14,47,"1,44818636622936","0,875","1,41441913366317","1,07943441309843","0,87",Seed_5_Trainable_no_Threshold_Encoder_2x2_imgsize_14,False,Threshold,
+Seed_3_Trainable_yes_FRQI_for_2x2_2x2_imgsize_14,47,"0,404531033379025","0,89","19,28552475214","0,330462439161492","0,91",Seed_3_Trainable_yes_FRQI_for_2x2_2x2_imgsize_14,True,FRQI,
+Seed_3_Trainable_yes_NEQR_2x2_imgsize_14,47,"2,7144706244978","0,86","24,9382669734954","1,63844340854117","0,88",Seed_3_Trainable_yes_NEQR_2x2_imgsize_14,True,NEQR,
+Seed_5_Trainable_yes_Threshold_Encoder_2x2_imgsize_14,45,"0,390794132648734","0,845","6,8868166399002","0,31636318929377","0,92",Seed_5_Trainable_yes_Threshold_Encoder_2x2_imgsize_14,True,Threshold,
+,,,,,,,,,,
+,epoch,train_loss,train_acc,train_time_per_step,val_loss,val_acc,name,trainable,encoder,From all Epochs
+Seed_1_Trainable_no_FRQI_for_2x2_2x2_imgsize_14,39,"0,398139912890037","0,87","1,2339321899414","0,211726204638835","0,95",Seed_1_Trainable_no_FRQI_for_2x2_2x2_imgsize_14,False,FRQI,
+Seed_8_Trainable_no_NEQR_2x2_imgsize_14,39,"2,74646238893039","0,85","2,43674201965332","0,771114246622412","0,9",Seed_8_Trainable_no_NEQR_2x2_imgsize_14,False,NEQR,
+Seed_4_Trainable_no_Threshold_Encoder_2x2_imgsize_14,21,"1,25111985032083","0,805","1,38042495727539","0,677112996408261","0,86",Seed_4_Trainable_no_Threshold_Encoder_2x2_imgsize_14,False,Threshold,
+Seed_2_Trainable_yes_FRQI_for_2x2_2x2_imgsize_14,39,"0,36690591737657","0,875","16,7895522713661","0,218768455759563","0,93",Seed_2_Trainable_yes_FRQI_for_2x2_2x2_imgsize_14,True,FRQI,
+Seed_0_Trainable_yes_NEQR_2x2_imgsize_14,13,"4,76831749746881","0,65","26,5465165257454","0,931573432005678","0,89",Seed_0_Trainable_yes_NEQR_2x2_imgsize_14,True,NEQR,
+Seed_5_Trainable_yes_Threshold_Encoder_2x2_imgsize_14,38,"0,377375009553216","0,89","6,72504940032959","0,281170833445503","0,89",Seed_5_Trainable_yes_Threshold_Encoder_2x2_imgsize_14,True,Threshold,

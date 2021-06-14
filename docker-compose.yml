@@ -1,0 +1,19 @@
+version: '3'
+services:
+
+  experiments:
+    build: .
+    ports:
+      - 127.0.0.1:6006:6006
+    command: supervisord -n -c /etc/supervisor/supervisord.conf
+    volumes:
+      - ./experiments/save:/experiments/save
+    working_dir: /experiments/
+
+#    deploy:
+#      resources:
+#        reservations:
+#          devices:
+#          - driver: nvidia
+#            device_ids: ['0']
+#            capabilities: [gpu]

@@ -1,0 +1,257 @@
+Initialize application with hyperparameters:
+{'batch_size': 2, 'calculation': 'RandomLayer', 'calculation_args': {}, 'calculation_seed': 7, 'circuit_layers': 1, 'data': 'MNIST', 'data_shuffle_seed': 362356, 'encoder': 'Threshold_Encoder', 'encoder_args': {}, 'epochs_num': 50, 'filter_length': 2, 'img_size': 14, 'logs_path': './save/', 'lr': 0.01, 'measurement': 'UniformGateMeasurements', 'measurement_args': {}, 'n_rotations': 4, 'np_seed': 10, 'out_channels': 4, 'out_features': 10, 'run_test': True, 'steps_in_epoch': 100, 'stride': 1, 'test_samples': 1000, 'torch_seed': 10, 'train_samples': 10000, 'train_split_percent': 0.8, 'trainable': False, 'val_data_size': 50, 'valid_samples': 200, 'weights_seed': 11111, 'name': 'Seed_7_Trainable_no_Threshold_Encoder_2x2_imgsize_14'}
+hyper parameters: {'batch_size': 2, 'calculation': 'RandomLayer', 'calculation_args': {}, 'calculation_seed': 7, 'circuit_layers': 1, 'data': 'MNIST', 'data_shuffle_seed': 362356, 'encoder': 'Threshold_Encoder', 'encoder_args': {}, 'epochs_num': 50, 'filter_length': 2, 'img_size': 14, 'logs_path': './save/', 'lr': 0.01, 'measurement': 'UniformGateMeasurements', 'measurement_args': {}, 'n_rotations': 4, 'np_seed': 10, 'out_channels': 4, 'out_features': 10, 'run_test': True, 'steps_in_epoch': 100, 'stride': 1, 'test_samples': 1000, 'torch_seed': 10, 'train_samples': 10000, 'train_split_percent': 0.8, 'trainable': False, 'val_data_size': 50, 'valid_samples': 200, 'weights_seed': 11111, 'name': 'Seed_7_Trainable_no_Threshold_Encoder_2x2_imgsize_14'}
+Starting Untrainable Experiment with 1 layers and 1 filters
+Start training epoch 1 with seed 7685385 
+Quantum circuit at the beginning of epoch 1
+Epoch 1 / 50 . Accuracy: 0.435000. Loss: 4.025700. Time: 1.344090
+Validate after epoch 1 with seed 7685385
+Val Accuracy: 0.570000, Val Loss: 2.676597 
+Start training epoch 2 with seed 8100989 
+Quantum circuit at the beginning of epoch 2
+Epoch 2 / 50 . Accuracy: 0.625000. Loss: 2.187065. Time: 1.312851
+Validate after epoch 2 with seed 8100989
+Val Accuracy: 0.620000, Val Loss: 2.828948 
+Start training epoch 3 with seed 5242852 
+Quantum circuit at the beginning of epoch 3
+Epoch 3 / 50 . Accuracy: 0.680000. Loss: 1.920074. Time: 1.366868
+Validate after epoch 3 with seed 5242852
+Val Accuracy: 0.670000, Val Loss: 1.777803 
+Start training epoch 4 with seed 3589440 
+Quantum circuit at the beginning of epoch 4
+Epoch 4 / 50 . Accuracy: 0.735000. Loss: 1.451997. Time: 1.345834
+Validate after epoch 4 with seed 3589440
+Val Accuracy: 0.680000, Val Loss: 1.638055 
+Start training epoch 5 with seed 6909297 
+Quantum circuit at the beginning of epoch 5
+Epoch 5 / 50 . Accuracy: 0.690000. Loss: 2.350090. Time: 1.343686
+Validate after epoch 5 with seed 6909297
+Val Accuracy: 0.530000, Val Loss: 4.153522 
+Start training epoch 6 with seed 5542621 
+Quantum circuit at the beginning of epoch 6
+Epoch 6 / 50 . Accuracy: 0.665000. Loss: 2.758260. Time: 1.338646
+Validate after epoch 6 with seed 5542621
+Val Accuracy: 0.690000, Val Loss: 2.324761 
+Start training epoch 7 with seed 9192944 
+Quantum circuit at the beginning of epoch 7
+Epoch 7 / 50 . Accuracy: 0.710000. Loss: 2.258197. Time: 1.349446
+Validate after epoch 7 with seed 9192944
+Val Accuracy: 0.660000, Val Loss: 2.382481 
+Start training epoch 8 with seed 7448477 
+Quantum circuit at the beginning of epoch 8
+Epoch 8 / 50 . Accuracy: 0.735000. Loss: 2.019817. Time: 1.349880
+Validate after epoch 8 with seed 7448477
+Val Accuracy: 0.680000, Val Loss: 2.292704 
+Start training epoch 9 with seed 9349114 
+Quantum circuit at the beginning of epoch 9
+Epoch 9 / 50 . Accuracy: 0.705000. Loss: 2.308555. Time: 1.317638
+Validate after epoch 9 with seed 9349114
+Val Accuracy: 0.700000, Val Loss: 2.877565 
+Start training epoch 10 with seed 4905216 
+Quantum circuit at the beginning of epoch 10
+Epoch 10 / 50 . Accuracy: 0.735000. Loss: 2.717718. Time: 1.372960
+Validate after epoch 10 with seed 4905216
+Val Accuracy: 0.740000, Val Loss: 2.281820 
+Start training epoch 11 with seed 8092138 
+Quantum circuit at the beginning of epoch 11
+Epoch 11 / 50 . Accuracy: 0.755000. Loss: 2.431790. Time: 1.349652
+Validate after epoch 11 with seed 8092138
+Val Accuracy: 0.800000, Val Loss: 1.626908 
+Start training epoch 12 with seed 8333814 
+Quantum circuit at the beginning of epoch 12
+Epoch 12 / 50 . Accuracy: 0.730000. Loss: 2.527782. Time: 1.344759
+Validate after epoch 12 with seed 8333814
+Val Accuracy: 0.730000, Val Loss: 2.085537 
+Start training epoch 13 with seed 7585188 
+Quantum circuit at the beginning of epoch 13
+Epoch 13 / 50 . Accuracy: 0.745000. Loss: 2.871246. Time: 1.354379
+Validate after epoch 13 with seed 7585188
+Val Accuracy: 0.760000, Val Loss: 2.175669 
+Start training epoch 14 with seed 964979 
+Quantum circuit at the beginning of epoch 14
+Epoch 14 / 50 . Accuracy: 0.780000. Loss: 1.750734. Time: 1.349237
+Validate after epoch 14 with seed 964979
+Val Accuracy: 0.780000, Val Loss: 1.478580 
+Start training epoch 15 with seed 1152528 
+Quantum circuit at the beginning of epoch 15
+Epoch 15 / 50 . Accuracy: 0.830000. Loss: 1.513699. Time: 1.340183
+Validate after epoch 15 with seed 1152528
+Val Accuracy: 0.710000, Val Loss: 2.590022 
+Start training epoch 16 with seed 840036 
+Quantum circuit at the beginning of epoch 16
+Epoch 16 / 50 . Accuracy: 0.800000. Loss: 1.763182. Time: 1.366758
+Validate after epoch 16 with seed 840036
+Val Accuracy: 0.740000, Val Loss: 2.472650 
+Start training epoch 17 with seed 180463 
+Quantum circuit at the beginning of epoch 17
+Epoch 17 / 50 . Accuracy: 0.745000. Loss: 3.157053. Time: 1.338512
+Validate after epoch 17 with seed 180463
+Val Accuracy: 0.700000, Val Loss: 3.880236 
+Start training epoch 18 with seed 575883 
+Quantum circuit at the beginning of epoch 18
+Epoch 18 / 50 . Accuracy: 0.760000. Loss: 2.155978. Time: 1.367627
+Validate after epoch 18 with seed 575883
+Val Accuracy: 0.610000, Val Loss: 6.665225 
+Start training epoch 19 with seed 2033718 
+Quantum circuit at the beginning of epoch 19
+Epoch 19 / 50 . Accuracy: 0.860000. Loss: 1.638531. Time: 1.326048
+Validate after epoch 19 with seed 2033718
+Val Accuracy: 0.800000, Val Loss: 1.590836 
+Start training epoch 20 with seed 822616 
+Quantum circuit at the beginning of epoch 20
+Epoch 20 / 50 . Accuracy: 0.810000. Loss: 2.242809. Time: 1.379359
+Validate after epoch 20 with seed 822616
+Val Accuracy: 0.790000, Val Loss: 2.091116 
+Start training epoch 21 with seed 519531 
+Quantum circuit at the beginning of epoch 21
+Epoch 21 / 50 . Accuracy: 0.790000. Loss: 1.892220. Time: 1.373527
+Validate after epoch 21 with seed 519531
+Val Accuracy: 0.840000, Val Loss: 1.838196 
+Start training epoch 22 with seed 3749553 
+Quantum circuit at the beginning of epoch 22
+Epoch 22 / 50 . Accuracy: 0.830000. Loss: 1.649836. Time: 1.353811
+Validate after epoch 22 with seed 3749553
+Val Accuracy: 0.820000, Val Loss: 2.194591 
+Start training epoch 23 with seed 7810102 
+Quantum circuit at the beginning of epoch 23
+Epoch 23 / 50 . Accuracy: 0.830000. Loss: 2.086471. Time: 1.360645
+Validate after epoch 23 with seed 7810102
+Val Accuracy: 0.810000, Val Loss: 2.537036 
+Start training epoch 24 with seed 6635929 
+Quantum circuit at the beginning of epoch 24
+Epoch 24 / 50 . Accuracy: 0.765000. Loss: 2.345570. Time: 1.334774
+Validate after epoch 24 with seed 6635929
+Val Accuracy: 0.800000, Val Loss: 2.317861 
+Start training epoch 25 with seed 5948798 
+Quantum circuit at the beginning of epoch 25
+Epoch 25 / 50 . Accuracy: 0.815000. Loss: 1.979166. Time: 1.317192
+Validate after epoch 25 with seed 5948798
+Val Accuracy: 0.730000, Val Loss: 3.572873 
+Start training epoch 26 with seed 9650829 
+Quantum circuit at the beginning of epoch 26
+Epoch 26 / 50 . Accuracy: 0.830000. Loss: 1.923721. Time: 1.342825
+Validate after epoch 26 with seed 9650829
+Val Accuracy: 0.810000, Val Loss: 1.968116 
+Start training epoch 27 with seed 8032092 
+Quantum circuit at the beginning of epoch 27
+Epoch 27 / 50 . Accuracy: 0.815000. Loss: 1.671151. Time: 1.356868
+Validate after epoch 27 with seed 8032092
+Val Accuracy: 0.780000, Val Loss: 2.989787 
+Start training epoch 28 with seed 9700694 
+Quantum circuit at the beginning of epoch 28
+Epoch 28 / 50 . Accuracy: 0.835000. Loss: 1.459183. Time: 1.351642
+Validate after epoch 28 with seed 9700694
+Val Accuracy: 0.840000, Val Loss: 1.424096 
+Start training epoch 29 with seed 1833630 
+Quantum circuit at the beginning of epoch 29
+Epoch 29 / 50 . Accuracy: 0.845000. Loss: 1.274407. Time: 1.322491
+Validate after epoch 29 with seed 1833630
+Val Accuracy: 0.740000, Val Loss: 2.973119 
+Start training epoch 30 with seed 8003673 
+Quantum circuit at the beginning of epoch 30
+Epoch 30 / 50 . Accuracy: 0.765000. Loss: 2.495798. Time: 1.337490
+Validate after epoch 30 with seed 8003673
+Val Accuracy: 0.720000, Val Loss: 4.386624 
+Start training epoch 31 with seed 1804940 
+Quantum circuit at the beginning of epoch 31
+Epoch 31 / 50 . Accuracy: 0.815000. Loss: 2.330059. Time: 1.345577
+Validate after epoch 31 with seed 1804940
+Val Accuracy: 0.700000, Val Loss: 3.866518 
+Start training epoch 32 with seed 2488863 
+Quantum circuit at the beginning of epoch 32
+Epoch 32 / 50 . Accuracy: 0.760000. Loss: 2.531266. Time: 1.401065
+Validate after epoch 32 with seed 2488863
+Val Accuracy: 0.760000, Val Loss: 3.653234 
+Start training epoch 33 with seed 9993017 
+Quantum circuit at the beginning of epoch 33
+Epoch 33 / 50 . Accuracy: 0.820000. Loss: 2.175575. Time: 1.326034
+Validate after epoch 33 with seed 9993017
+Val Accuracy: 0.780000, Val Loss: 2.906262 
+Start training epoch 34 with seed 6096676 
+Quantum circuit at the beginning of epoch 34
+Epoch 34 / 50 . Accuracy: 0.855000. Loss: 1.674253. Time: 1.343998
+Validate after epoch 34 with seed 6096676
+Val Accuracy: 0.830000, Val Loss: 2.088441 
+Start training epoch 35 with seed 8416786 
+Quantum circuit at the beginning of epoch 35
+Epoch 35 / 50 . Accuracy: 0.835000. Loss: 1.927571. Time: 1.347210
+Validate after epoch 35 with seed 8416786
+Val Accuracy: 0.810000, Val Loss: 2.315677 
+Start training epoch 36 with seed 7544925 
+Quantum circuit at the beginning of epoch 36
+Epoch 36 / 50 . Accuracy: 0.855000. Loss: 1.958262. Time: 1.313340
+Validate after epoch 36 with seed 7544925
+Val Accuracy: 0.840000, Val Loss: 2.015957 
+Start training epoch 37 with seed 2300823 
+Quantum circuit at the beginning of epoch 37
+Epoch 37 / 50 . Accuracy: 0.820000. Loss: 2.175181. Time: 1.312145
+Validate after epoch 37 with seed 2300823
+Val Accuracy: 0.750000, Val Loss: 3.457302 
+Start training epoch 38 with seed 297566 
+Quantum circuit at the beginning of epoch 38
+Epoch 38 / 50 . Accuracy: 0.835000. Loss: 2.069790. Time: 1.354537
+Validate after epoch 38 with seed 297566
+Val Accuracy: 0.770000, Val Loss: 2.709409 
+Start training epoch 39 with seed 9087736 
+Quantum circuit at the beginning of epoch 39
+Epoch 39 / 50 . Accuracy: 0.820000. Loss: 1.968657. Time: 1.342719
+Validate after epoch 39 with seed 9087736
+Val Accuracy: 0.860000, Val Loss: 1.885145 
+Start training epoch 40 with seed 4529545 
+Quantum circuit at the beginning of epoch 40
+Epoch 40 / 50 . Accuracy: 0.850000. Loss: 1.585044. Time: 1.346741
+Validate after epoch 40 with seed 4529545
+Val Accuracy: 0.760000, Val Loss: 4.335837 
+Start training epoch 41 with seed 2643983 
+Quantum circuit at the beginning of epoch 41
+Epoch 41 / 50 . Accuracy: 0.860000. Loss: 1.368725. Time: 1.377749
+Validate after epoch 41 with seed 2643983
+Val Accuracy: 0.860000, Val Loss: 2.125464 
+Start training epoch 42 with seed 4407926 
+Quantum circuit at the beginning of epoch 42
+Epoch 42 / 50 . Accuracy: 0.860000. Loss: 2.118884. Time: 1.336016
+Validate after epoch 42 with seed 4407926
+Val Accuracy: 0.850000, Val Loss: 1.684904 
+Start training epoch 43 with seed 3019847 
+Quantum circuit at the beginning of epoch 43
+Epoch 43 / 50 . Accuracy: 0.885000. Loss: 1.992865. Time: 1.344987
+Validate after epoch 43 with seed 3019847
+Val Accuracy: 0.770000, Val Loss: 2.803240 
+Start training epoch 44 with seed 2389387 
+Quantum circuit at the beginning of epoch 44
+Epoch 44 / 50 . Accuracy: 0.785000. Loss: 2.761896. Time: 1.354211
+Validate after epoch 44 with seed 2389387
+Val Accuracy: 0.780000, Val Loss: 2.231729 
+Start training epoch 45 with seed 6358673 
+Quantum circuit at the beginning of epoch 45
+Epoch 45 / 50 . Accuracy: 0.790000. Loss: 2.693674. Time: 1.354912
+Validate after epoch 45 with seed 6358673
+Val Accuracy: 0.860000, Val Loss: 1.553150 
+Start training epoch 46 with seed 91566 
+Quantum circuit at the beginning of epoch 46
+Epoch 46 / 50 . Accuracy: 0.845000. Loss: 2.051365. Time: 1.358030
+Validate after epoch 46 with seed 91566
+Val Accuracy: 0.830000, Val Loss: 1.749847 
+Start training epoch 47 with seed 5528267 
+Quantum circuit at the beginning of epoch 47
+Epoch 47 / 50 . Accuracy: 0.855000. Loss: 1.607330. Time: 1.343188
+Validate after epoch 47 with seed 5528267
+Val Accuracy: 0.830000, Val Loss: 2.622264 
+Start training epoch 48 with seed 3695388 
+Quantum circuit at the beginning of epoch 48
+Epoch 48 / 50 . Accuracy: 0.805000. Loss: 2.320209. Time: 1.373581
+Validate after epoch 48 with seed 3695388
+Val Accuracy: 0.790000, Val Loss: 2.749990 
+Start training epoch 49 with seed 3054369 
+Quantum circuit at the beginning of epoch 49
+Epoch 49 / 50 . Accuracy: 0.860000. Loss: 1.520262. Time: 1.347752
+Validate after epoch 49 with seed 3054369
+Val Accuracy: 0.760000, Val Loss: 3.363406 
+Start training epoch 50 with seed 5436884 
+Quantum circuit at the beginning of epoch 50
+Epoch 50 / 50 . Accuracy: 0.860000. Loss: 2.078906. Time: 1.340019
+Validate after epoch 50 with seed 5436884
+Val Accuracy: 0.670000, Val Loss: 6.921317 
+Training Execution time: 02:48:33.00
+Conducting Test
+Test Accuracy: 0.707000, Test Loss: 5.664091 
