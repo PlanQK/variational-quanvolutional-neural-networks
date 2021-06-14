@@ -115,7 +115,7 @@ These now following two tables show the average training duration for each exper
 ## Contributing
 * Name - email@domain.com
 ## License and Copyright
-Copyright 2021 [name of copyright owner]
+Copyright 2021 Denny Mattern, Darya Martyniuk, Henri Willems, Fabian Bergmann and Adrian Paschke.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
