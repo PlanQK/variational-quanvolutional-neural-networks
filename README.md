@@ -1,7 +1,6 @@
 # Variational Quanvolutional Neural Networks with enhanced image encoding
 #### Abstract
-_Image classification is an important task in various machine learning applications. In recent years, a number of classification methods based on quantum machine learning and different quantum image
-encoding techniques have been proposed. In this paper, we study the effect of three different quantum image encoding approaches on the performance of a convolution-inspired hybrid quantum-classical image classification algorithm called quanvolutional neural network (QNN). We furthermore examine the effect of variational -- i.e. trainable -- quantum circuits on the classification results. Our experiments indicate that some image encodings are better suited for variational circuits. However, our experiments show as well that there is not one best image encoding, but that the choice of the encoding depends on the specific constraints of the application._This repository is the official implementation of Variational Quanvolutional Neural Networks with enhanced image encoding. 
+Image classification is an important task in various machine learning applications. In recent years, a number of classification methods based on quantum machine learning and different quantum image encoding techniques have been proposed. In this paper, we study the effect of three different quantum image encoding approaches on the performance of a convolution-inspired hybrid quantum-classical image classification algorithm called quanvolutional neural network (QNN). We furthermore examine the effect of variational - i.e. trainable - quantum circuits on the classification results. Our experiments indicate that some image encodings are better suited for variational circuits. However, our experiments show as well that there is not one best image encoding, but that the choice of the encoding depends on the specific constraints of the application. This repository is the official implementation of Variational Quanvolutional Neural Networks with enhanced image encoding. 
 
 ## Requirements
 
@@ -113,7 +112,13 @@ These now following two tables show the average training duration for each exper
 | Threshold                | 24.52                                          | 78.32     |
 
 ## Contributing
-* Name - email@domain.com
+* Denny Mattern - denny.mattern@fokus.fraunhofer.de
+* Darya Martyniuk - darya.martyniuk@fokus.fraunhofer.de
+* Henri Willems - henri.willems@fokus.fraunhofer.de
+* Fabian Bergmann - fabian.bergmann@fokus.fraunhofer.de
+* Adrian Paschke - adrian.paschke@fokus.fraunhofer.de
+
+
 ## License and Copyright
 Copyright 2021 Denny Mattern, Darya Martyniuk, Henri Willems, Fabian Bergmann and Adrian Paschke.
 
